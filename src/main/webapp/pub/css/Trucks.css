@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, rgb(139, 124, 173), rgba(5, 167, 113, 0.5));
+    
+}
+
+h1{
+    font-family: "Audiowide", sans-serif;
+
+}
+a{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none; 
+}
+
+p a:hover{
+    color: red;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(9, 165, 185, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    }
+    
+    .navbar a {
+    float: left;
+    font-size: 25px;
+    color: aqua;
+    text-align: center;
+    padding: 35px 16px;
+    text-decoration: none;
+    }
+    
+    .dropdown {
+    float: left;
+    overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: aqua;
+    padding: 35px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(216, 219, 9, 0.4);
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display:block;
+    }
+
+
+    /****** this is for about html *******/ 
+
+    .navbar {
+        overflow: hidden;
+        background-color: rgba(222, 240, 232, 0.2);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+        }
+        
+        .navbar a {
+        float: left;
+        font-size: 25px;
+        color: rgb(135, 243, 243);
+        text-align: center;
+        padding: 35px 16px;
+        text-decoration: none;
+        }
+
+        .column_box {
+			border: 2px solid;
+			border-color:black;
+			border-radius:10px;
+			overflow:hidden;
+            
+		}
+
+        .ml3 {
+            font-weight: 900;
+            font-size: 3.5em;
+            font-family: "Audiowide", sans-serif;
+          }
+
+          #myform{
+            text-decoration:rgba(0,0,0,0.2);
+
+        }
+

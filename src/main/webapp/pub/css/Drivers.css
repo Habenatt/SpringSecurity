@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');	
+		@import url('https://fonts.googleapis.com/css?family=Mali');
+@import url('http://fonts.cdnfonts.com/css/mali');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, rgb(139, 124, 173), rgba(5, 167, 113, 0.5));
+    
+}
+strong{
+    font-family: "Audiowide", sans-serif;
+}
+
+
+p{
+    font-family:'Times New Roman', Times, serif
+
+}
+a{
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none; 
+}
+
+p a:hover{
+    color: red;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+}
+.navbar {
+    overflow: hidden;
+    background-color: rgb(9, 165, 185, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+    }
+    
+    .navbar a {
+    float: left;
+    font-size: 25px;
+    color: aqua;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    }
+    
+    .dropdown1{
+        float: left;
+    overflow:visible;
+    
+    }
+    
+    .dropdown1 .dropbtn {
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: aqua;
+    padding: 15px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+    
+    .navbar a:hover, .dropdown1:hover .dropbtn {
+    background-color: rgb(216, 219, 9, 0.4);
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow:visible;
+    }
+    
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    overflow:visible;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+    
+    .dropdown1:hover .dropdown-content {
+    display:block;
+    }
+
+    .navbar img:hover {
+        background-color:rgb(41, 123, 155, 0.2)
+        }
+
+        
+     /****** this is for about html *******/ 
+
+     .navbar {
+        overflow: hidden;
+        background-color: rgba(222, 240, 232, 0.2);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+        }
+        
+        .navbar a {
+        float: left;
+        font-size: 25px;
+        color: rgb(135, 243, 243);
+        text-align: center;
+        padding: 35px 16px;
+        text-decoration: none;
+        }
+
+        .column_box {
+			border: 2px solid;
+			border-color:black;
+			border-radius:10px;
+			overflow:hidden;
+            
+		}
+
+        table.fixed { table-layout:fixed; }
+table.fixed td { overflow: hidden; }
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+    }
+
+    .sfont{
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    #div {      
+        
+			
+			animation: sk-chase 2.5s infinite linear both;
+			      
+        animation-name: example;
+        animation-duration: 20s;
+      }
+      
+      @keyframes example {             
+        from{color: rgb(5, 40, 117);}
+        to{color:rgb(243, 242, 237)}
+      }
+   
+      .ml2 {
+        font-weight: 900;
+        font-size: 3.5em;
+      }
+      
+      .ml2 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+      .ml3 {
+        font-weight: 900;
+        font-size: 3.5em;
+      }
+
+      h1:before{
+        content: 'We have Expreinced Drivers!';
+        font-size: 200%;
+        animation-name: head;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes head {
+        0% {font-size:200%; opacity:1;}
+        25% {font-size:150%; opacity:0;}
+        50% {font-size:200%; opacity:1; content: "Ready Trucks!!";}
+        65% {font-size:150%; opacity:0;}
+        80% {font-size:200%; opacity:1; content: " & Nice Customer Service"}
+        90% {font-size:150%; opacity:0;}
+        100% {font-size:200%;opacity:1; content: "Please Call Us!!!!"}
+    }
+
+
+    
+   
