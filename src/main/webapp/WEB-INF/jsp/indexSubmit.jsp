@@ -1,5 +1,6 @@
-<html>
-<body >
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
+<jsp:include page="./include/header.jsp" />
 
 <form action="/index">
 
@@ -14,7 +15,4 @@
 <img src="../pub/images/eld.png" style="margin-left:300px;  height:300px;">
 
 
-
-</body>
-
-</html>
+<jsp:include page="./include/footer.jsp" />

@@ -2,7 +2,12 @@
 
 <jsp:include page="../include/header.jsp" />
 
-<form method="get"  action="/registration-url-path/registerSubmit">
+<form method="GET" action="/registration-url-path/registerSubmit">
+
+
+
+    <label for="uname" style="width: 14%;"  > <b>User name:</b></label>
+    <input type="text" id="uname" name="userName" value="${formBeanKey.userName}" placeholder="Enter your User name"><br>
 
     <label for="fname" style="width: 14%;"  > <b>First name:</b></label>
     <input type="text" id="fname" name="firstName" value="${formBeanKey.firstName}" placeholder="Enter your First name"><br>
@@ -12,6 +17,10 @@
 
     <label for="email" style="width: 14%;"><b>email:</b></label>
     <input type="text" id="email" name="email" value="${formBeanKey.email}" placeholder="Enter your email"><br>
+
+    <label for="phone" style="width: 14%;"><b>Phone:</b></label>
+    <input type="text" id="phone" name="phone" value="${formBeanKey.phone}" placeholder="Enter your Telephone Number"><br>
+
 
     <label for="age" style="width: 14%;"><b>Age:</b></label>
     <input type="number" id="age" name="age" value="${formBeanKey.age}" placeholder="Enter your age"><br>

@@ -17,16 +17,16 @@ import java.util.List;
 public class RegisterFormBean {
 
 
-    @Length(min=1, max=6, message = "First Name must  be between 1 and 6")
+    @Length(min=1, max=16, message = "First Name must  be between 1 and 6")
     private String firstName;
 
-    @NotEmpty(message = "lastName is required!")
+   // @NotEmpty(message = "lastName is required!")
     /*@Max(value=10, message="LAst Name must have 10 characters maximum!")
     @Min(value=3, message="LAst Name must have 10 characters minimum!")*/
-    @Length(min=1, max=11, message = "Last Name must  be between 1 and 11")
+    @Length(min=1, max=20, message = "Last Name must  be between 1 and 11")
     private String lastName;
 
-    @NotNull(message = "Age is required!")
+   // @NotNull(message = "Age is required!")
     @Max(value=18, message="Age must be 18  maximum!")
     @Min(value=3, message="Age must be 3  minimum!")
     private Integer  age;
@@ -34,14 +34,17 @@ public class RegisterFormBean {
 
 
 
-    @NotEmpty(message = "Email is required!")
+   // @NotEmpty(message = "Email is required!")
     // @Pattern(regexp = "")
-    @EmailUnique(message = "Email must be unique")
+   // @EmailUnique(message = "Email must be unique")
     private String email;
 
 
     private String password;
     private String confirmPassword;
+
+    private String userName;
+    private String phone;
 
     private
     List<String> errorMessages = new ArrayList<>();

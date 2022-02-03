@@ -1,5 +1,6 @@
-<html>
-<body>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
+<jsp:include page="../include/header.jsp" />
 
 <h2> LOGIN from FORM </h2>
 
@@ -18,6 +19,4 @@
 
 
 
-
-</body>
-</html>
+<jsp:include page="../include/footer.jsp" />

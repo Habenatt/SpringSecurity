@@ -1,16 +1,13 @@
 
-<html>
-<head>
-    <title>
-        success
-    </title>
-</head>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
-<body style="background-color: lightgray;">
+<jsp:include page="../include/header.jsp" />
 
 <%--<jsp:include page="../include/header.jsp">--%>
 
 <form method="get"  action="/loginSubmit">
+
+    <h1 style="color:red">${errorMessage}</h1>
              Username : <input type="text" name="username"><br>
              Password : <input type="password" name="password"> <br>
 
@@ -20,8 +17,8 @@
 
 </form>
 
- <%--<jsp:include page="../include/footer.jsp">--%>
 
-    </body>
-    </html>
+
+ <%--<jsp:include page="../include/footer.jsp">--%>
+<jsp:include page="../include/footer.jsp" />
 

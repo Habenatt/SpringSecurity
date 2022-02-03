@@ -16,6 +16,8 @@ import javax.servlet.http.HttpSession;
 // @RequestMapping( "/login")
 public class LoginController {
     private static  String SESSION_KEY = "trythis";
+
+
     @RequestMapping(value =  "/login" , method = RequestMethod.GET)
     public ModelAndView index(HttpSession session) throws Exception {
         System.out.println("===============at the first login page========================================");

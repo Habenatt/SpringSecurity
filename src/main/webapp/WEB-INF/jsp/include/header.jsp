@@ -42,7 +42,17 @@
         <td><a href="/registration-url-path/register"><u>User Registration</u></a></td>
         <td> | </td>
         <td><a href="/index"><u>Index</u></a></td>
+        <td>|</td>
+        <td><a href="/registration-url-path/userList">User Search</a></td>
+        <td>|</td>
+        <td><a href="/registration-url-path/userList2">User Search2</a></td>
+        <td>|</td>
+        <td><a href="/loginFromForm">loginFromForm</a></td>
+        <td>|</td>
 
+        <td><a href="/success">success</a></td>
+        <td>|</td>
+        <td><a href="/indexSubmit">submitted</a></td>
 
     </tr>
 

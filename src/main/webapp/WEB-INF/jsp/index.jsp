@@ -1,11 +1,6 @@
-<html>
-    <head>
-        <title>
-             success
-        </title>
-    </head>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
-    <body style="background-color: lightgray;">
+<jsp:include page="./include/header.jsp" />
 
     <h2 style = "margin-left: 200px; color:  rgb(131, 6, 247);"> Registration Page</h2>
 
@@ -44,5 +39,4 @@
 
         </form><br><br><br>
 
-    </body>
-    </html>
+<jsp:include page="./include/footer.jsp" />
