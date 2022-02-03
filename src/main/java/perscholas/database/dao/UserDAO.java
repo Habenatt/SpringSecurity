@@ -19,9 +19,13 @@ public interface UserDAO extends JpaRepository<User,Long> {
 
     public User findByEmail(@Param("email") String email);
 
+    @Query("select u from User u where u.id = :id")
+    public User findById(@Param("id") Integer id);
+
+
     public List<User> findByLastName(@Param("lastName") String lastName);
 
-    @Query("select u from User u where u.firstName = :firstName and u.lastName = :lastName")
+   // @Query("select u from User u where u.firstName = :firstName and u.lastName = :lastName")
     public List<User> findByFirstNameIgnoreCaseAndLastNameIgnoreCase(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
     public List<User> findByFirstNameOrLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
@@ -35,6 +39,7 @@ public interface UserDAO extends JpaRepository<User,Long> {
 
    @Query(value="SELECT u.* FROM user u WHERE u.first_name like '%:firstName%'", nativeQuery = true)
     public List<User> findByFirstNameLike(String firstName);
+
     @Query("select ur from UserRole ur where ur.user.id = :userId")
     List<UserRole> getUserRoles(Integer userId);
 

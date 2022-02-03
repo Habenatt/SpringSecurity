@@ -30,6 +30,7 @@ public class RegistrationController {
     public ModelAndView userList(@RequestParam(required = false) String search, @RequestParam(required = false) String firstName, @RequestParam(required = false) String lastName) throws Exception {
         ModelAndView response = new ModelAndView();
         response.setViewName("registration/userList");
+
         if(!StringUtils.isEmpty(search)){
             List<User> users=userDao.findByFirstNameIgnoreCase(search);
             response.addObject("userListKey", users);
@@ -37,7 +38,12 @@ public class RegistrationController {
         }
 
         if(!StringUtils.isEmpty(firstName) && !StringUtils.isEmpty(lastName)){
+            User u= new User();
+            u.setFirstName(firstName);
+            u.setLastName(lastName);
             List<User> users=userDao.findByFirstNameIgnoreCaseAndLastNameIgnoreCase(firstName, lastName);
+
+
             response.addObject("userListKey", users);
             // response.setViewName("registration/userList");
         }
@@ -48,7 +54,7 @@ public class RegistrationController {
 
 
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
+ /*@RequestMapping(value = "/register", method = RequestMethod.GET)
     public ModelAndView register() throws Exception {
         ModelAndView response = new ModelAndView();
         response.setViewName("registration/register");
@@ -58,7 +64,7 @@ public class RegistrationController {
 
         return response;
     }
-
+*/
 
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
@@ -66,6 +72,16 @@ public class RegistrationController {
         ModelAndView response = new ModelAndView();
         response.setViewName("registration/register");
         if(id!=null){
+            User user =userDao.findById(id);
+            RegisterFormBean form= new RegisterFormBean();
+            form.setEmail(user.getEmail());
+            form.setFirstName(user.getFirstName());
+            form.setLastName(user.getLastName());
+            form.setUserName(user.getUserName());
+            form.setPhone(user.getPhone());
+
+
+            response.addObject("formBeanKey", form);
 
         }
 else {

@@ -16,6 +16,7 @@ import java.util.List;
 @Setter
 public class RegisterFormBean {
 
+    private Integer id;
 
     @Length(min=1, max=16, message = "First Name must  be between 1 and 6")
     private String firstName;

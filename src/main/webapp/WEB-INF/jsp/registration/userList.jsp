@@ -33,7 +33,7 @@
             <td>${user.firstName}</td>
             <td>${user.lastName}</td>
             <td>${user.password}</td>
-            <td><b><a href="">Edit</a> </b></td>
+            <td><b><a href="/registration-url-path/register?id=${user.id}">Edit</a> </b></td>
         </tr>
     </c:forEach>
 </table>
