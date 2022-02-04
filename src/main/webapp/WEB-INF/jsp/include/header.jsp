@@ -21,6 +21,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
     <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
             integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -31,13 +35,13 @@
             crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body >
 
 <!-- implement any html you need to show on every page as a header here -->
 <table  cellpadding="5" style="margin-left: 50px; margin-top: 10px">
     <tr>
 
-        <td><a href="/logout"><u>Logout</u></a></td>
+        <td><a href="/logout"><u>Login</u></a></td>
         <td> | </td>
         <td><a href="/registration-url-path/register"><u>User Registration</u></a></td>
         <td> | </td>
@@ -45,7 +49,7 @@
         <td>|</td>
         <td><a href="/registration-url-path/userList">User Search</a></td>
         <td>|</td>
-        <td><a href="/registration-url-path/userList2">User Search2</a></td>
+        <td><a href="/registration-url-path/registerSubmit">registerSubmit</a></td>
         <td>|</td>
         <td><a href="/loginFromForm">loginFromForm</a></td>
         <td>|</td>
@@ -53,6 +57,8 @@
         <td><a href="/success">success</a></td>
         <td>|</td>
         <td><a href="/indexSubmit">submitted</a></td>
+        <td>|</td>
+        <td><a href="/registration-url-path/CRUDOperations">CRUD</a></td>
 
     </tr>
 

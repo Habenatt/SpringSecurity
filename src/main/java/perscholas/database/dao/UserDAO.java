@@ -19,8 +19,13 @@ public interface UserDAO extends JpaRepository<User,Long> {
 
     public User findByEmail(@Param("email") String email);
 
-    @Query("select u from User u where u.id = :id")
+   // @Query("select u from User u where u.id = :id")
     public User findById(@Param("id") Integer id);
+
+    @Query("select u from User u")
+    public  List<User> findAllUsers();
+
+
 
 
     public List<User> findByLastName(@Param("lastName") String lastName);
@@ -28,14 +33,19 @@ public interface UserDAO extends JpaRepository<User,Long> {
    // @Query("select u from User u where u.firstName = :firstName and u.lastName = :lastName")
     public List<User> findByFirstNameIgnoreCaseAndLastNameIgnoreCase(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
-    public List<User> findByFirstNameOrLastName(@Param("firstName") String firstName, @Param("lastName") String lastName);
+
+    public List<User> findByFirstNameContainsIgnoreCaseAndLastNameContainsIgnoreCase(@Param("firstName") String firstName, @Param("lastName") String lastName);
+
+    public List<User> findByFirstNameIgnoreCaseOrLastNameIgnoreCase(@Param("firstName") String firstName, @Param("lastName") String lastName);
 
 
-    @Query("select u from User u where u.firstName = :firstName")
+   // @Query("select u from User u where u.firstName = :firstName")
     public List<User> findByFirstNameIgnoreCase(String firstName);
 
-    @Query("select u from User u where u.userName = :username")
-    public User findByUsername(@Param("username") String userName);
+   // @Query("select u from User u where u.userName = :username")
+    public User findByUserName(@Param("userName") String userName);
+
+    public User deleteById(@Param("id") Integer id);
 
    @Query(value="SELECT u.* FROM user u WHERE u.first_name like '%:firstName%'", nativeQuery = true)
     public List<User> findByFirstNameLike(String firstName);
