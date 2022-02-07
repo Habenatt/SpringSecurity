@@ -190,7 +190,7 @@ else {
             user.setPhone(form.getPhone());
             user.setPassword(form.getPassword());
             user.setPhone(form.getPhone());
-            userDao.save(user);
+           userDao.save(user);
             System.out.println(user);
             response.setViewName("redirect:/login");
         }

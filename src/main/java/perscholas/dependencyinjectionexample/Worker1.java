@@ -9,6 +9,7 @@ import perscholas.validation.EmailUniqueImpl;
 public class Worker1 {
 
 
+
     public static final Logger LOG= LoggerFactory.getLogger(Worker1.class);
     public void doWork(){
 

@@ -41,7 +41,9 @@
 <table  cellpadding="5" style="margin-left: 50px; margin-top: 10px">
     <tr>
 
-        <td><a href="/logout"><u>Login</u></a></td>
+        <td><a href="login/login"><u>Login</u></a></td>
+        <td> | </td>
+        <td><a href="login/logoutSuccess"><u>Logout</u></a></td>
         <td> | </td>
         <td><a href="/registration-url-path/register"><u>User Registration</u></a></td>
         <td> | </td>
@@ -59,7 +61,8 @@
         <td><a href="/indexSubmit">submitted</a></td>
         <td>|</td>
         <td><a href="/registration-url-path/CRUDOperations">CRUD</a></td>
-
+        <td>|</td>
+        <td><a href="/admin/home">Admin Home</a></td>
     </tr>
 
 </table>

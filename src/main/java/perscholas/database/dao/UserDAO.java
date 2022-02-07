@@ -17,7 +17,8 @@ import perscholas.database.entity.UserRole;
 
 public interface UserDAO extends JpaRepository<User,Long> {
 
-    public User findByEmail(@Param("email") String email);
+   // @Query("select ur from UserRole ur where ur.user.id = :userId")
+    public User findByEmail(@Param("email") String userId);
 
    // @Query("select u from User u where u.id = :id")
     public User findById(@Param("id") Integer id);

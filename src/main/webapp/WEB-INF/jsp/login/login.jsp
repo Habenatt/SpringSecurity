@@ -5,7 +5,7 @@
 
 <%--<jsp:include page="../include/header.jsp">--%>
 
-<form method="get"  action="/loginSubmit">
+<form action="/login/loginSecurityPost" method="post"  >
 
     <h1 style="color:red">${errorMessage}</h1>
              Username : <input type="text" name="username"><br>
