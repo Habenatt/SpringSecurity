@@ -94,6 +94,7 @@ public class RegistrationController {
             form.setLastName(user.getLastName());
             form.setUserName(user.getUserName());
             form.setPhone(user.getPhone());
+            form.setPassword(user.getPassword());
             form.setId(user.getId());
 
             response.addObject("formBeanKey", form);

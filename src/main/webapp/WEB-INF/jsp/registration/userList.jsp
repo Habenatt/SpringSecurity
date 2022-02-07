@@ -5,11 +5,11 @@
 
 <form method="get" action="/registration-url-path/ListAllUsers">
 
-    <button type="submit">ListAllUsers</button>
+  <button type="submit">ListAllUsers</button>
 </form><br>
 
 <form method="get" action="/registration-url-path/userList">
-    <input type="text" name="search" value="${search}" placeholder="Enter your First name">
+    FirstName:  <input type="text" name="search" value="${search}" placeholder="Enter your First name">
     <button type="submit" >Search</button>
 </form><br>
 
